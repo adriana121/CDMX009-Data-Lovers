@@ -1,4 +1,4 @@
-//export default {
+export default {
   "pokemon": [{
     "id": 1,
     "num": "001",
@@ -806,14 +806,14 @@
   }, {
     "id": 29,
     "num": "029",
-    "name": "Nidoran ♀ (Female)",
+    "name": "Nidoran ♀ (female)",
     "img": "http://www.serebii.net/pokemongo/pokemon/029.png",
     "type": [
       "Poison"
     ],
     "height": "0.41 m",
     "weight": "7.0 kg",
-    "candy": "Nidoran ♀ (Female) Candy",
+    "candy": "Nidoran ♀ (female) Candy",
     "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 1.38,
@@ -844,7 +844,7 @@
     ],
     "height": "0.79 m",
     "weight": "20.0 kg",
-    "candy": "Nidoran ♀ (Female) Candy",
+    "candy": "Nidoran ♀ (female) Candy",
     "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.088,
@@ -860,7 +860,7 @@
     ],
     "prev_evolution": [{
       "num": "029",
-      "name": "Nidoran(Female)"
+      "name": "Nidoran(female)"
     }],
     "next_evolution": [{
       "num": "031",
@@ -877,7 +877,7 @@
     ],
     "height": "1.30 m",
     "weight": "60.0 kg",
-    "candy": "Nidoran ♀ (Female) Candy",
+    "candy": "Nidoran ♀ (female) Candy",
     "egg": "Not in Eggs",
     "spawn_chance": 0.012,
     "avg_spawns": 1.2,
@@ -891,7 +891,7 @@
     ],
     "prev_evolution": [{
       "num": "029",
-      "name": "Nidoran(Female)"
+      "name": "Nidoran(female)"
     }, {
       "num": "030",
       "name": "Nidorina"
@@ -899,14 +899,14 @@
   }, {
     "id": 32,
     "num": "032",
-    "name": "Nidoran ♂ (Male)",
+    "name": "Nidoran ♂ (male)",
     "img": "http://www.serebii.net/pokemongo/pokemon/032.png",
     "type": [
       "Poison"
     ],
     "height": "0.51 m",
     "weight": "9.0 kg",
-    "candy": "Nidoran ♂ (Male) Candy",
+    "candy": "Nidoran ♂ (male) Candy",
     "candy_count": 25,
     "egg": "5 km",
     "spawn_chance": 1.31,
@@ -937,7 +937,7 @@
     ],
     "height": "0.89 m",
     "weight": "19.5 kg",
-    "candy": "Nidoran ♂ (Male) Candy",
+    "candy": "Nidoran ♂ (male) Candy",
     "candy_count": 100,
     "egg": "Not in Eggs",
     "spawn_chance": 0.083,
@@ -950,7 +950,7 @@
     ],
     "prev_evolution": [{
       "num": "032",
-      "name": "Nidoran(Male)"
+      "name": "Nidoran(male)"
     }],
     "next_evolution": [{
       "num": "034",
@@ -967,7 +967,7 @@
     ],
     "height": "1.40 m",
     "weight": "62.0 kg",
-    "candy": "Nidoran ♂ (Male) Candy",
+    "candy": "Nidoran ♂ (male) Candy",
     "egg": "Not in Eggs",
     "spawn_chance": 0.017,
     "avg_spawns": 1.7,
@@ -981,7 +981,7 @@
     ],
     "prev_evolution": [{
       "num": "032",
-      "name": "Nidoran(Male)"
+      "name": "Nidoran(male)"
     }, {
       "num": "033",
       "name": "Nidorino"
@@ -992,7 +992,8 @@
     "name": "Clefairy",
     "img": "http://www.serebii.net/pokemongo/pokemon/035.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "0.61 m",
     "weight": "7.5 kg",
@@ -1019,7 +1020,8 @@
     "name": "Clefable",
     "img": "http://www.serebii.net/pokemongo/pokemon/036.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "1.30 m",
     "weight": "40.0 kg",
@@ -1096,7 +1098,8 @@
     "name": "Jigglypuff",
     "img": "http://www.serebii.net/pokemongo/pokemon/039.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "0.51 m",
     "weight": "5.5 kg",
@@ -1120,7 +1123,8 @@
     "name": "Wigglytuff",
     "img": "http://www.serebii.net/pokemongo/pokemon/040.png",
     "type": [
-      "Normal"
+      "Normal",
+      "Fairy"
     ],
     "height": "0.99 m",
     "weight": "12.0 kg",
@@ -2299,7 +2303,8 @@
     "name": "Magnemite",
     "img": "http://www.serebii.net/pokemongo/pokemon/081.png",
     "type": [
-      "Electric"
+      "Electric",
+      "Steel"
     ],
     "height": "0.30 m",
     "weight": "6.0 kg",
@@ -2328,7 +2333,8 @@
     "name": "Magneton",
     "img": "http://www.serebii.net/pokemongo/pokemon/082.png",
     "type": [
-      "Electric"
+      "Electric",
+      "Steel"
     ],
     "height": "0.99 m",
     "weight": "60.0 kg",
@@ -3363,7 +3369,8 @@
     "name": "Mr. Mime",
     "img": "http://www.serebii.net/pokemongo/pokemon/122.png",
     "type": [
-      "Psychic"
+      "Psychic",
+      "Fairy"
     ],
     "height": "1.30 m",
     "weight": "54.5 kg",

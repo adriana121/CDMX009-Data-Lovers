@@ -1,0 +1,436 @@
+body{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-color: #175E95;
+  background-size: cover !important;
+   -webkit-background-size: cover !important;
+   -moz-background-size: cover !important;
+   -o-background-size: cover !important;
+
+}
+
+/*******************Loader*************************/
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 999;
+  align-content: center;
+}
+
+#loader{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("img/loader.gif") no-repeat center;
+  background-size: 30%;
+  left: 0;
+  right: 0;
+  top: center;
+}
+
+#loader p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  font-size: 4vw;
+  font-family: Pokemon;
+  -webkit-text-fill-color: #fde007;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #4358b1;
+  text-shadow: 7px 5px 5px #110033;
+}
+
+/*******************Slider*************************/
+.slider{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 1000%;
+  list-style: none;
+  animation: change 50s infinite alternate;
+  background-attachment: fixed;
+}
+
+.slide li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+}
+
+@keyframes change {
+  9% { margin-left: 0;}
+  10% { margin-left: 0;}
+
+  19% {margin-left: -100%;}
+  20% {margin-left: -100%;}
+
+  29% {margin-left: -200%;}
+  30% {margin-left: -200%;}
+
+  39% {margin-left: -300%;}
+  40% {margin-left: -300%;}
+
+  49% {margin-left: -400%;}
+  50% {margin-left: -400%;}
+
+  59% {margin-left: -500%;}
+  60% {margin-left: -500%;}
+
+  69% {margin-left: -600%;}
+  70% {margin-left: -600%;}
+
+  79% {margin-left: -700%;}
+  80% {margin-left: -700%;}
+
+  89% {margin-left: -800%;}
+  90% {margin-left: -800%;}
+
+  99% {margin-left: -900%;}
+  100% {margin-left: -900%;}
+}
+
+/*********************Menu***********************/
+.sidebar{
+  text-align: center;
+  width: 170px;
+  height: 80%;
+  position: absolute;
+  background: #1F86D5;
+  color: #fff;
+  outline: 1px solid #175E95;
+  /*overflow-x: hidden; /*scroll horizontal*/
+  overflow-y: scroll; /*scroll vertical*/
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  display: none;  /* Ocultar scroll */
+}
+
+.sidebar h2{
+  text-align: center;
+  font-size: 1em;
+  margin: 0;
+  padding: 5px;
+  background: #175E95;
+  color: #fff;
+  font-family: Sitka;
+
+}
+
+.sidebar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: Sitka;
+
+}
+
+.sidebar li{
+  outline: 1px solid #175E95; /*Genera lineas que no ocupen espacio*/
+  transition: border 0.3s;
+}
+
+.sidebar li:hover{
+  background: #175E95;
+  border-left: 5px solid #eee;
+}
+
+.sidebar a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 2.4px;
+}
+
+.menu-bar{
+  cursor: pointer;
+  margin-left: 8px;
+  position: relative;
+
+}
+
+.abrir{
+  transform: translatex(170px);
+}
+
+/*********************Contenido General***********************/
+
+.contenido{
+  width: 100%;
+  height: 80%;
+  margin: auto;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("img/fondo-principal.jpg");
+  background-size: cover !important;
+   -webkit-background-size: cover !important;
+   -moz-background-size: cover !important;
+   -o-background-size: cover !important;
+  padding: 10px;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  font-family: Sitka;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+
+.contenido h1{
+  text-align: center;
+  font-family: Pokemon;
+  margin: 0px;
+  padding: 0;
+  -webkit-text-fill-color: #fde007;
+  -webkit-text-stroke: 1.5px;
+  -webkit-text-stroke-color: #4358b1;
+  text-shadow: 7px 5px 5px #110033;
+}
+
+.master{
+  font-size: 2.5vh 1.5vw;
+  width: 100%;/*ancho*/
+  height: auto%;
+  text-align: center;
+}
+
+
+/********************Search************************/
+.box{
+  position: absolute;
+  width: 400px;
+  height: 50px;
+  margin-right: 92%;
+  margin-left: 15%;
+  overflow: hidden;
+  transform: translateY(-50%, -50%);
+  display: flex;
+  align-items: center;
+
+}
+
+input.src{
+  padding: 5px 5px 5px 32px;
+  outline: none;
+  font-size: 12px;
+  border-radius: 15px;
+  color: #444;
+  border: 3px solid #175E95;
+  background: #175E95 url("img/Lupa.png") no-repeat 9px center;
+  width: 50px;/*tamaño del placeholder antes de la animacion*/
+  transition: all .5s;
+  color: #fff;
+  font-family: Sitka;
+}
+
+input.src:hover{
+  width: 200px;/*tamaño del placeholder despues de la animacion*/
+  background-color: #0f002d;
+  border-color: #0f002d;
+  box-shadow: 0 0 5px #6dcff680;
+  font-family: Sitka;
+}
+
+input::placeholder{
+  color: #fff;
+  font-family: Sitka;
+}
+
+.btn{
+  text-align: center;
+  position: relative;
+  width: 80px;
+  height: 30px;
+  font-family: Sitka;
+  font-size: 12px;
+  border-radius: 15px;
+  background-color: #fde007;
+  border: 3px solid #4358b1;
+  shadow: 7px 5px 5px #110033;
+  cursor: pointer;
+}
+
+.btn:hover{
+box-shadow:1px 5px 10px lightgrey;
+transform:scale(1.1)
+}
+
+
+/******************Titulo Pokemon*****************/
+@font-face {
+  font-family: Pokemon;
+  src: url(img/Pokemon.ttf);
+}
+
+/**************Fuente del demas texto*****************/
+
+@font-face {
+    font-family: Sitka;
+    src: url(img/Sitka.ttc);
+}
+/**************Root***********************************/
+#root{
+  display:flex;
+  flex-wrap:wrap;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+#root h1{
+  text-align: center;
+  font-size: 45px;
+  font-family: Pokemon;
+  padding: 0;
+  -webkit-text-fill-color: #fde007;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #4358b1;
+  text-shadow: 7px 5px 5px #110033;
+  transform: translate(-50%, -50%);
+}
+
+
+/***************************Tarjetitas*********************/
+.contenido .card{
+position: relative;
+width:20vw;
+padding: 15px;
+overflow: hidden;
+color: #000;
+margin:15px;
+box-shadow:0px 2px 10px grey;
+text-align:center;
+border-radius:10px;
+transition:all .3s;
+
+}
+
+.contenido .card h2{
+  position: relative;
+  margin: 0;
+  padding:0;
+  font-size: 1.3vw;
+  z-index: 2;
+}
+
+.contenido .card p{
+position: relative;
+margin: 0;
+padding:0;
+font-size: 0.8vw;
+z-index: 2;
+}
+
+.contenido .card img{
+position: relative;
+margin: 0;
+padding:0;
+height: 8vw;
+font-size: 12px;
+z-index: 2;
+}
+
+.contenido .card:before{
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: url("img/fondo-principal.jpg");
+  background-size: cover !important;
+   -webkit-background-size: cover !important;
+   -moz-background-size: cover !important;
+   -o-background-size: cover !important;
+  background-attachment: fixed;
+ filter: blur(10px);
+}
+
+.card:hover{
+box-shadow:1px 5px 10px lightgrey;
+transform:scale(1.1)
+}
+
+/******************************Botones abecedario******************************/
+
+.alpha{
+position: relative;
+text-align: center;
+justify-content: center;
+width: 3.5vw;
+height: 3.5vh;
+left: 20px;
+top: 0;
+margin: 1.5px;
+font-family: Sitka;
+font-size: 0.9vw;
+border-radius: 15px;
+background-color: #fde007;
+border: 3px solid #4358b1;
+shadow: 7px 5px 5px #110033;
+align-content: center;
+cursor: pointer;
+}
+
+.alpha:hover{
+box-shadow:1px 5px 10px lightgrey;
+transform:scale(1.1)
+}
+
+ #abecedario{
+  display:flex;
+  display: -moz-grid-group;
+  flex-wrap:wrap;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+/****************************Boton pagina principal****************************/
+
+#parentBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.Back{
+  text-align: center;
+  position: relative;
+  width:15vw;
+  height: 5vh;
+  margin: 1.5px;
+  font-family: Sitka;
+  font-size: 0.9vw;
+  border-radius: 15px;
+  background-color: #fde007;
+  border: 3px solid #4358b1;
+  shadow: 7px 5px 5px #110033;
+  cursor: pointer;
+}
+
+.Back:hover{
+box-shadow:1px 5px 10px lightgrey;
+transform:scale(1.1)
+}
